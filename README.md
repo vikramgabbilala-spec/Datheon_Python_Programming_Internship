@@ -1,5 +1,30 @@
 # Datheon Python Programming Internship
 
+## Task 1: Stock Portfolio Tracker
+
+`task1_portfolio/portfolio.py` calculates position values and gains or losses,
+prints a portfolio summary, and exports the results as CSV. It supports default
+holdings, a single ticker, or interactive input.
+
+```powershell
+python task1_portfolio/portfolio.py
+python task1_portfolio/portfolio.py --ticker AAPL --buy-price 150 --shares 10
+python task1_portfolio/portfolio.py --interactive
+```
+
+The script uses Yahoo Finance market data for symbols not in its built-in
+fallback price list. The included `portfolio_summary.csv` is a sample output,
+not a live quote.
+
+## Task 2: Hangman
+
+`task2_hangman/hangman.py` is a command-line Hangman game with input
+validation, duplicate-guess handling, a six-mistake limit, and replay support.
+
+```powershell
+python task2_hangman/hangman.py
+```
+
 ## Task 3: Automated File Organizer
 
 `organizer.py` sorts files into category folders based on their extensions. It
@@ -36,8 +61,7 @@ Files are sorted into `Documents`, `Images`, `Videos`, `Audio`, `Archives`,
 `Code`, or `Others`. Existing files are never overwritten; a numbered suffix
 is added to colliding names. Symbolic links are skipped.
 
-### Project status
+## Project status
 
-This repository currently contains the Task 3 deliverable. The internship
-submission instructions request at least two completed tasks before evaluation;
-add another completed task before submitting for credential review.
+All three task deliverables are included. The internship submission instructions
+request at least two completed tasks before evaluation.
