@@ -25,11 +25,11 @@ validation, duplicate-guess handling, a six-mistake limit, and replay support.
 python task2_hangman/hangman.py
 ```
 
-## Task 3: Automated File Organizer
+## Task 3: File Organiser
 
-`organizer.py` sorts files into category folders based on their extensions. It
-supports a dry run, optional recursive scanning, collision-safe file names,
-and logging for permission and filesystem errors.
+`task3_file_organiser/organizer.py` sorts files into category folders based on
+their extensions. It supports a dry run, optional recursive scanning,
+collision-safe file names, and logging for permission and filesystem errors.
 
 ### Requirements
 
@@ -41,20 +41,20 @@ and logging for permission and filesystem errors.
 Preview the changes first:
 
 ```powershell
-python organizer.py "$HOME\Downloads" --dry-run
+python task3_file_organiser/organizer.py "$HOME\Downloads" --dry-run
 ```
 
 Organize files directly inside a directory:
 
 ```powershell
-python organizer.py "$HOME\Downloads"
+python task3_file_organiser/organizer.py "$HOME\Downloads"
 ```
 
 To also scan nested directories and move their files into category folders at
 the selected directory's root:
 
 ```powershell
-python organizer.py "$HOME\Downloads" --recursive
+python task3_file_organiser/organizer.py "$HOME\Downloads" --recursive
 ```
 
 Files are sorted into `Documents`, `Images`, `Videos`, `Audio`, `Archives`,
