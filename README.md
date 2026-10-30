@@ -1,29 +1,29 @@
 # Datheon Python Programming Internship
 
-## Task 1: Stock Portfolio Tracker
+## Task 1: Hangman
 
-`task1_portfolio/portfolio.py` calculates position values and gains or losses,
+`task1_hangman/hangman.py` is a command-line Hangman game with input
+validation, duplicate-guess handling, a six-mistake limit, and replay support.
+
+```powershell
+python task1_hangman/hangman.py
+```
+
+## Task 2: Stock Portfolio Tracker
+
+`task2_portfolio/portfolio.py` calculates position values and gains or losses,
 prints a portfolio summary, and exports the results as CSV. It supports default
 holdings, a single ticker, or interactive input.
 
 ```powershell
-python task1_portfolio/portfolio.py
-python task1_portfolio/portfolio.py --ticker AAPL --buy-price 150 --shares 10
-python task1_portfolio/portfolio.py --interactive
+python task2_portfolio/portfolio.py
+python task2_portfolio/portfolio.py --ticker AAPL --buy-price 150 --shares 10
+python task2_portfolio/portfolio.py --interactive
 ```
 
 The script uses Yahoo Finance market data for symbols not in its built-in
 fallback price list. The included `portfolio_summary.csv` is a sample output,
 not a live quote.
-
-## Task 2: Hangman
-
-`task2_hangman/hangman.py` is a command-line Hangman game with input
-validation, duplicate-guess handling, a six-mistake limit, and replay support.
-
-```powershell
-python task2_hangman/hangman.py
-```
 
 ## Task 3: File Organiser
 
